@@ -10,16 +10,17 @@ namespace BHDLearning.Data.Queries
     public class QueryListProducts
         : QueryBase<Product>
     {
-        private ServiceData serviceData;
+        private DbSetData dbSetData;
         public QueryListProducts()
         {
-            serviceData = new ServiceData();
+            //TODO DI
+            dbSetData = new DbSetData();
             
         }
 
         protected override IEnumerable<Product> OnQuery(Func<Product, bool> filter = null)
         {
-            return serviceData.ListProducts(filter);
+            return dbSetData.ListProducts(filter);
 
         }
     }

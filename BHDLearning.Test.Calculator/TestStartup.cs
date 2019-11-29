@@ -1,4 +1,5 @@
-﻿using BHDLearning.RestApi.Infrastructure;
+﻿using BHDLearning.Data.Queries;
+using BHDLearning.RestApi.Infrastructure;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
@@ -23,7 +24,7 @@ namespace BHDLearning.Test
 
         public override void OnConfigureService(IServiceCollection services)
         {
-            
+ 
         }
     }
 }

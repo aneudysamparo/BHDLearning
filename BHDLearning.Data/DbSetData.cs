@@ -6,11 +6,11 @@ using System.Text;
 
 namespace BHDLearning.Data
 {
-    public class ServiceData
+    public class DbSetData
     {
         private ContextData contextData;
 
-        public ServiceData()
+        public DbSetData()
         {
             contextData = new ContextData();
         }
