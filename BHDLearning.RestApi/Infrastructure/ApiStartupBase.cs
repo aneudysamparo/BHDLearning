@@ -30,7 +30,7 @@ namespace BHDLearning.RestApi.Infrastructure
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-
+            
             OnConfigure(app, env);
         }
 
