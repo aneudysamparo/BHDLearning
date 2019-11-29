@@ -31,5 +31,23 @@ namespace System.Reflection
 
             return referenceAssemblies;
         }
+
+        public static void SetValueFromServiceProvider(this MemberInfo memberInfo, object instance, IServiceProvider serviceProvider)
+        {
+            switch (memberInfo.MemberType)
+            {
+                case MemberTypes.Field:
+                    FieldInfo fieldInfo = (FieldInfo)memberInfo;
+                    fieldInfo.SetValue(instance, serviceProvider.GetService(fieldInfo.FieldType));
+                    break;
+                case MemberTypes.Property:
+                    PropertyInfo propertyInfo = (PropertyInfo)memberInfo;
+                    if (propertyInfo.CanWrite)
+                        propertyInfo.SetValue(instance, serviceProvider.GetService(propertyInfo.PropertyType));
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }

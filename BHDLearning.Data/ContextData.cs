@@ -1,4 +1,5 @@
 ﻿using BHDLearning.Data.Models;
+using BHDLearning.DependencyInjection.Infrastructure;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -7,6 +8,7 @@ using System.Linq;
 
 namespace BHDLearning.Data
 {
+    [Inject]
     public class ContextData
     {
         public ContextData()

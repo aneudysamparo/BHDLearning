@@ -1,4 +1,5 @@
 ﻿using BHDLearning.Data.Models;
+using BHDLearning.DependencyInjection.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,13 +7,16 @@ using System.Text;
 
 namespace BHDLearning.Data
 {
+    [Inject]
     public class DbSetData
     {
+        [Autowired]
         private ContextData contextData;
 
         public DbSetData()
         {
-            contextData = new ContextData();
+            //TODO: DI
+            
         }
 
         public IEnumerable<ProductType> ListTypes(Func<ProductType, bool> filter = null)

@@ -13,10 +13,10 @@ namespace BHDLearning.Api.Data.Controllers
         : ControllerBase
     {
 
-        DataService service;
-        public DataController()
+        private DataService service;
+        public DataController(DataService service)
         {
-            service = new DataService();
+            this.service = service;
         }
 
         [HttpGet("gettypes")]

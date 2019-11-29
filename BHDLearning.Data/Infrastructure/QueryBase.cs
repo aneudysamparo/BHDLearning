@@ -17,7 +17,7 @@ namespace BHDLearning.Data.Infrastructure
             try
             {
                 if (!CanExecute())
-                    return Enumerable.Empty<T>();
+                    return default;
 
                 IEnumerable<T> result = OnQuery(filter);
                 callBack?.Invoke(result);

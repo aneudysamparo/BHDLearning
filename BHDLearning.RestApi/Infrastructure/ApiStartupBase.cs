@@ -24,7 +24,7 @@ namespace BHDLearning.RestApi.Infrastructure
 
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddInjection();
             OnConfigureService(services);
         }
 

@@ -1,5 +1,6 @@
 ﻿using BHDLearning.Data.Models;
 using BHDLearning.Data.Queries;
+using BHDLearning.DependencyInjection.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,16 +8,18 @@ using System.Threading.Tasks;
 
 namespace BHDLearning.Api.Data
 {
+    [Inject]
     public class DataService
     {
         private QueryListTypes queryListTypes;
         private QueryListProducts queryListProducts;
 
-        public DataService()
+        public DataService(QueryListTypes queryListTypes,
+            QueryListProducts queryListProducts)
         {
             //TODO DI
-            queryListProducts = new QueryListProducts();
-            queryListTypes = new QueryListTypes();
+            this.queryListProducts = queryListProducts;
+            this.queryListTypes = queryListTypes;
         }
 
         public async Task<IEnumerable<ProductType>> GetTypes(string filter)
