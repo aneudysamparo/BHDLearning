@@ -5,11 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BHDLearning.Core\BHDLearning.Core.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="3.0.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Extensions\" />
+    <ProjectReference Include="..\BHDLearning.RestApi\BHDLearning.RestApi.csproj" />
   </ItemGroup>
-
+  
 </Project>
