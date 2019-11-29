@@ -16,7 +16,8 @@ namespace BHDLeonLearning.Testing.Infrastructure
 
         public UnitTestBase()
         {
-
+            testServer = new TestServer(GetHost());
+            client = testServer.CreateClient();
         }
 
         protected virtual IWebHostBuilder GetHost()
