@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F8FC3F5E-1887-4B46-9859-5EA92B6D9C30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BHDLearning.Core", "BHDLearning.Core\BHDLearning.Core.csproj", "{F2BA40CA-A7EF-4483-8B9E-D8673FD009D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{B4B0F592-3AD0-4336-8213-CCE9D15E8320}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BHDLearning.DependencyInjection", "BHDLearning.DependencyInjection\BHDLearning.DependencyInjection.csproj", "{C8C7740F-05C2-4BE6-B01E-111B8058BDED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BHDLearning.RestApi", "BHDLearning.RestApi\BHDLearning.RestApi.csproj", "{182F28D4-1256-4D0A-8CA8-CDD282D2FCC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BHDLeonLearning.Testing", "BHDLeonLearning.Testing\BHDLeonLearning.Testing.csproj", "{286E1453-D6E4-4F2F-A96E-0E7C441D876B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2BA40CA-A7EF-4483-8B9E-D8673FD009D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2BA40CA-A7EF-4483-8B9E-D8673FD009D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2BA40CA-A7EF-4483-8B9E-D8673FD009D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2BA40CA-A7EF-4483-8B9E-D8673FD009D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8C7740F-05C2-4BE6-B01E-111B8058BDED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8C7740F-05C2-4BE6-B01E-111B8058BDED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8C7740F-05C2-4BE6-B01E-111B8058BDED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8C7740F-05C2-4BE6-B01E-111B8058BDED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{182F28D4-1256-4D0A-8CA8-CDD282D2FCC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{182F28D4-1256-4D0A-8CA8-CDD282D2FCC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{182F28D4-1256-4D0A-8CA8-CDD282D2FCC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{182F28D4-1256-4D0A-8CA8-CDD282D2FCC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{286E1453-D6E4-4F2F-A96E-0E7C441D876B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{286E1453-D6E4-4F2F-A96E-0E7C441D876B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{286E1453-D6E4-4F2F-A96E-0E7C441D876B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{286E1453-D6E4-4F2F-A96E-0E7C441D876B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F2BA40CA-A7EF-4483-8B9E-D8673FD009D4} = {B4B0F592-3AD0-4336-8213-CCE9D15E8320}
+		{B4B0F592-3AD0-4336-8213-CCE9D15E8320} = {F8FC3F5E-1887-4B46-9859-5EA92B6D9C30}
+		{C8C7740F-05C2-4BE6-B01E-111B8058BDED} = {B4B0F592-3AD0-4336-8213-CCE9D15E8320}
+		{182F28D4-1256-4D0A-8CA8-CDD282D2FCC6} = {B4B0F592-3AD0-4336-8213-CCE9D15E8320}
+		{286E1453-D6E4-4F2F-A96E-0E7C441D876B} = {B4B0F592-3AD0-4336-8213-CCE9D15E8320}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {74BFBF12-5C58-4B37-8000-E29600A4E1FA}
+	EndGlobalSection
+EndGlobal
